@@ -1,0 +1,194 @@
+/* общие */
+body {
+	background-color: #c4cdd6;
+	width: 100vw;
+	height: 100vh;
+}
+.hidden {
+	display: none;
+}
+/* preloader - 1-й экран */
+.preloader {
+	width: 100%;
+}
+.preloader, .container-fluid,
+.row {
+height: 100%;
+}
+.preloader .button_begin,
+.preloader .button_begin:hover {
+	color: #ffffff;
+	width: 15.3125rem;
+	height: 2.8125rem;
+	border-radius: 0.1875rem;
+	background-color: #ff891e;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+/* carousel - 2-й экран */
+.carousel .wrap {
+	display: flex;
+	padding: .5%;
+}
+.carousel .carousel-indicators>li {
+	display: flex;
+	width: 18.125rem;
+	height: 3.4375rem;
+	background-color: gray;
+	border-radius: 0.1875rem;
+	border: 1px solid rgba(0, 0, 0, 0.44);
+	text-indent: 0;
+}
+.carousel .carousel-indicators>li>p {
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 0.625rem;
+	color: #ffffff;
+	font-family: "Open Sans",
+	sans-serif;
+}
+.carousel .carousel-indicators>li>p>span {
+	font-size: 11px;
+	font-weight: 700;
+	color: #b9b1ac;
+}
+.carousel .carousel-item>.carousel-caption>h2 {
+	color: #000000;
+	font-size: 42px;
+	font-weight: 400;
+}
+.carousel .carousel-item>.carousel-caption>h4 {
+	font-size: 26px;
+	line-height: 50px;
+	color: #000000;
+}
+.carousel .carousel-caption {
+	width: 36rem;
+	left: 57%;
+	top: 30%;
+	text-align: left;
+	font-family: "Open Sans",
+	sans-serif;
+}
+.carousel .btn-warning {
+	color: #fff;
+	background-color: #ff891e;
+}
+.carousel .btn-warning:hover {
+	background-color: #ff891e;
+	border-color: #ff891e;
+}
+.carousel .btn-outline-light {
+	color:#000;
+	border-color:#000;
+}
+.carousel .btn-size {
+	width: 9.5625rem;
+	height: 2.8125rem;
+	border-radius: 0.1875rem;
+	border: 0.0625rem solid #212121;
+	margin-right: 1.375rem;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+	width: 4.8125rem;
+	height: 5.3125rem;
+	top: 50%;
+	border-radius: 0.1875rem;
+	background-color: #b4b8c1;
+}
+
+@media (min-width: 1170px) and (max-width: 1520px) {
+	.carousel .carousel-item>.carousel-caption>h2 {
+		font-size: 35px;
+	}
+	.carousel .carousel-item>.carousel-caption>h4 {
+		font-size: 22px;
+	}
+	.carousel .carousel-item>img{
+		transform: translateX(-10%);
+	}
+	.carousel .btn-size {
+		font-size: 13px;
+	}
+	.carousel .carousel-indicators>li>p {
+		font-size: 10px;
+	}
+	.carousel .carousel-indicators>li>p>span {
+		font-size: 9px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 1169px) {
+	.visual{
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
+	.carousel .carousel-indicators>li {
+		width: 1.5625rem;
+		height: 1.5625rem;
+		background-color: #000;
+		border-radius: 50%;
+		border: 1px solid rgba(0, 0, 0, 1);
+	}
+	.carousel .carousel-inner .mobile-display-1,
+	.carousel .carousel-inner .mobile-display-2,
+	.carousel .carousel-inner .mobile-display-3,
+	.carousel .carousel-inner .mobile-display-4 {
+		width: 100vw;
+		height: 100vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	.carousel .carousel-inner .mobile-display-1 {
+		background-image: url("../img/slider/min/slider_1min.jpg");
+	}	
+	.carousel .carousel-inner .mobile-display-2 {
+		background-image: url("../img/slider/min/slider_2min.jpg");
+	}
+	.carousel .carousel-inner .mobile-display-3{
+		background-image: url("../img/slider/min/slider_3min.jpg");
+	}
+	.carousel .carousel-inner .mobile-display-4 {
+		background-image: url("../img/slider/min/slider_4min.jpg");
+	}
+	.carousel .carousel-caption {
+		width: 36rem;
+		left: auto;
+	}
+	.carousel .carousel-indicators {
+		top: 90%;
+	}
+}
+
+@media (min-width: 470px) and (max-width: 699px) {
+	.carousel .carousel-item>.carousel-caption>h2 {
+		font-size: 25px;
+	}
+	.carousel .carousel-item>.carousel-caption>h4 {
+		font-size: 18px;
+	}
+	.carousel .carousel-caption {
+		width: 28.125rem;
+		left: 3%;
+	}
+}
+
+@media (min-width: 350px) and (max-width: 469px) {
+	.carousel .carousel-item>.carousel-caption>h2 {
+		font-size: 23px;
+	}
+	.carousel .carousel-item>.carousel-caption>h4 {
+		font-size: 16px;
+	}
+	.carousel .carousel-caption {
+		width: 20.625rem;
+		left: 2%;
+	}
+}
